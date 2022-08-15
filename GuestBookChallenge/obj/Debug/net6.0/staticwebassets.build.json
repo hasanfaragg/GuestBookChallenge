@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "OqgdlYhK8Qr5kOBP7phbKl8YFom0AcSQBwC2wlaoups=",
+  "Source": "GuestBookChallenge",
+  "BasePath": "_content/GuestBookChallenge",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
