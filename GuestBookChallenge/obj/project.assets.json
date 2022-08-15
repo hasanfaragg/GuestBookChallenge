@@ -684,11 +684,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ITI - Materials\\API\\GuestBookChallenge\\GuestBookChallenge\\GuestBookChallenge.csproj",
+      "projectUniqueName": "D:\\ITI - Materials\\API\\New folder\\GuestBookChallenge\\GuestBookChallenge\\GuestBookChallenge.csproj",
       "projectName": "GuestBookChallenge",
-      "projectPath": "D:\\ITI - Materials\\API\\GuestBookChallenge\\GuestBookChallenge\\GuestBookChallenge.csproj",
+      "projectPath": "D:\\ITI - Materials\\API\\New folder\\GuestBookChallenge\\GuestBookChallenge\\GuestBookChallenge.csproj",
       "packagesPath": "C:\\Users\\Hassan Farag\\.nuget\\packages\\",
-      "outputPath": "D:\\ITI - Materials\\API\\GuestBookChallenge\\GuestBookChallenge\\obj\\",
+      "outputPath": "D:\\ITI - Materials\\API\\New folder\\GuestBookChallenge\\GuestBookChallenge\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hassan Farag\\AppData\\Roaming\\NuGet\\NuGet.Config",

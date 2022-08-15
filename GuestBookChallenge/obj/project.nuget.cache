@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KEwShyhi9K2dowp2yj4ujlrUS4MfY+W1xVTuuG5JRJ1WpcIrKIB5kr5EeTHAQEDGt+ygmhvAdygt9IEGr0wBbw==",
+  "dgSpecHash": "GchoW0daJ59kA9A/DcWrTLv398BPQjwaUKpRBi9/9ukVF0X1KAF9c3wZVqos070z/G1l5cG0vUogN+O7Wp5VLQ==",
   "success": true,
-  "projectFilePath": "D:\\ITI - Materials\\API\\GuestBookChallenge\\GuestBookChallenge\\GuestBookChallenge.csproj",
+  "projectFilePath": "D:\\ITI - Materials\\API\\New folder\\GuestBookChallenge\\GuestBookChallenge\\GuestBookChallenge.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hassan Farag\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Hassan Farag\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
