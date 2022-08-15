@@ -9,7 +9,7 @@ namespace GuestBookTest.MessagesControllers
     [ApiController]
     public class MessagesController : ControllerBase
     {
-       
+        private const string SqlConnection = "server=.; database=GuestBook; Integrated Security=true";
 
     }
 }
