@@ -13,6 +13,8 @@ namespace GuestBookTest.Controllers
   
 public class UsersController : ControllerBase
     {
-       
+        private const string SqlConnection = "server=.; database=GuestBook; Integrated Security=true";
+
+     
     }
 }
