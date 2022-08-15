@@ -15,6 +15,100 @@ public class UsersController : ControllerBase
     {
         private const string SqlConnection = "server=.; database=GuestBook; Integrated Security=true";
 
-     
+
+        [HttpPost]
+        // POST api/User/Login
+        public async Task<IActionResult> Login([FromBody] UserLogin userLogin)
+        {
+            var query = @"Select * From users where userName=@userName and password = @password ";
+            var dynamicParameter = new DynamicParameters();
+            dynamicParameter.Add("userName", userLogin.userName);
+            dynamicParameter.Add("Password", userLogin.password);
+            using (var connection = new SqlConnection(SqlConnection))
+            {
+                try
+                {
+
+                    var user = await connection.QueryFirstOrDefaultAsync<User>(query, dynamicParameter);
+                    if (user == null)
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        return Ok(user);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    return BadRequest(ex.Message);
+                }
+            }
+
+        }
+
+        [HttpGet("{userId}")]
+        // GET api/User/GetUserById/2
+        public async Task<IActionResult> GetUserById(int userId)
+        {
+            var query = @"Select * From users where userId = @userId";
+            var dynamicParameter = new DynamicParameters();
+            dynamicParameter.Add("userId", userId);
+            using (var connection = new SqlConnection(SqlConnection))
+            {
+                try
+                {
+                    var user = await connection.QueryFirstOrDefaultAsync<User>(query, dynamicParameter);
+                    if (user == null)
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        return Ok(new { userName = user.nickName, userId = user.userId });
+                    }
+                }
+                catch (Exception ex)
+                {
+                    return BadRequest(ex.Message);
+                }
+
+            }
+        }
+
+        [HttpPost]
+        // POST api/User/GreateUser
+        public async Task<IActionResult> CreateUser([FromBody] User user)
+        {
+            var query = @"INSERT INTO users (userName, nickName, password) VALUES (@userName, @nickName, @password);";
+
+            var dynamicParameter = new DynamicParameters();
+            dynamicParameter.Add("userName", user.userName);
+            dynamicParameter.Add("nickName", user.nickName);
+            dynamicParameter.Add("password", user.password);
+
+            using (var connection = new SqlConnection(SqlConnection))
+            {
+                try
+                {
+                    var result = await connection.ExecuteAsync(query, dynamicParameter);
+
+                    if (result == 0)
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        return Ok("Added");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    return BadRequest(ex.Message);
+                }
+
+            }
+
+        }
     }
 }
