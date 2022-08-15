@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "9CgKXFzjo+prtW1BLEeQbg9yj9SBRqED2KWOObY9z7ZYV7ivntaWjEkRhrX0lPhAgVD+hDU5rWn7D3+5ZXpIzQ==",
+  "success": true,
+  "projectFilePath": "D:\\ITI - Materials\\API\\GuestBookChallenge\\GuestBookChallenge\\GuestBookChallenge.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Hassan Farag\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Hassan Farag\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Hassan Farag\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Hassan Farag\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Hassan Farag\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Hassan Farag\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
